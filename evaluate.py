@@ -149,8 +149,8 @@ def evaluate(file_path: str) -> int:
 if __name__ == "__main__":
     output_path = './outputs'
 
+    total_score = 0
     for file_path in os.listdir(output_path):
-        total_score = 0
         print(f'Evaluating file: {file_path}')
         dscore = evaluate(os.path.join(output_path, file_path))
         print(f"Score: {dscore}")
